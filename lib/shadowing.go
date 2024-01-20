@@ -3,7 +3,7 @@ package lib
 import "fmt"
 
 func Shadow() {
-	// ①スコープ
+	// スコープ
 	//  if文
 	age := 10
 	fmt.Println(age) // 10
@@ -25,7 +25,7 @@ func Shadow() {
 	}
 	fmt.Println(num) // 6
 
-	// ②シャドーイング
+	// シャドーイング
 	// if文
 	age2 := 10
 	fmt.Println(age2) // 10

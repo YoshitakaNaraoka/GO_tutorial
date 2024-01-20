@@ -3,16 +3,16 @@ package lib
 import "fmt"
 
 func Map() {
-	// マップの宣言①
+	// マップの宣言
 	var m map[string]int = map[string]int{}
 	fmt.Println("マップの要素数:", len(m)) // マップの要素数: 0
 	fmt.Println(m)                  // map[]
 
-	// マップの宣言②（省略版）
+	// マップの宣言（省略版）
 	m2 := map[string]int{}
 	fmt.Println(m2) // map[]
 
-	// マップの宣言③（make()を利用）
+	// マップの宣言（make()を利用）
 	m3 := make(map[string]int)
 	fmt.Println(m3) // map[]
 
@@ -45,26 +45,26 @@ func Map() {
 	fmt.Println(m4) // map[apple:500 banana:50 orange:200]
 
 	// 第２戻り値を受け取ることで、要素の存在チェックが可能
-	// 要素の存在チェック①（第１戻り値に値。第２戻り値に判定結果。）
+	// 要素の存在チェック（第１戻り値に値。第２戻り値に判定結果。）
 	v, ok := m4["orange"]
 	fmt.Println(v)  // 200
 	fmt.Println(ok) // true
 
-	// 要素の存在チェック②（第１戻り値にゼロ値。第２戻り値に判定結果。）
+	// 要素の存在チェック（第１戻り値にゼロ値。第２戻り値に判定結果。）
 	v2, ok2 := m4["orang"]
 	fmt.Println(v2, ok2) // 0 false
 
-	// 要素の存在チェック③（if文で応用）
+	// 要素の存在チェック（if文で応用）
 	if v, ok := m4["apple"]; ok {
 		fmt.Println("appleキーの値:", v) // appleキーの値: 500
 	}
 
-	// マップの要素を繰り返す（range）①
+	// マップの要素を繰り返す（range）
 	for key, value := range m4 {
 		fmt.Println("キー:", key, ", ", "値:", value)
 	}
 
-	// マップの要素を繰り返す②（キーだけ、値だけも可能）
+	// マップの要素を繰り返す（キーだけ、値だけも可能）
 	for key := range m4 {
 		fmt.Println("キー:", key)
 	}

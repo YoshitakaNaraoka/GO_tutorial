@@ -5,14 +5,14 @@ import (
 )
 
 func Lit() {
-	// 数字
-	fmt.Println(123)
+	
+	fmt.Println(123) // 数字
 
-	// 浮動小数点数
-	fmt.Println(1.23)
+	
+	fmt.Println(1.23) // 浮動小数点数
 
-	// 文字列
-	fmt.Println("abc")
+	
+	fmt.Println("abc") // 文字列
 
 	// 文字列は改行可能
 	fmt.Println(`abc
@@ -42,11 +42,7 @@ true
 func Var() {
 	
 	var num1 int = 123 // 整数型の変数
-
-	
 	var num2 = 456 // 右辺で型が決まるなら型名は省略可能
-
-	
 	num3 := 789 // 省略記法（関数内でのみ利用可能）
 
 	fmt.Println(num1)
