@@ -8,4 +8,7 @@ import (
 func main() {
 	fmt.Println("Hello World")
 	lib.Lit()
+	lib.Shadow()
+	lib.Var()
+	lib.DataType()
 }
