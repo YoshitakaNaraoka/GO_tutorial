@@ -2,10 +2,14 @@ package main
 
 import (
 	"fmt"
-	"lib/literal"
+	"literal"
 )
 
 func main() {
 	fmt.Println("Hello World")
-	lit()
+	Lit()
+}
+
+func Lit() {
+	panic("unimplemented")
 }
