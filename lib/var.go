@@ -1,6 +1,0 @@
-package lib
-
-import (
-	"fmt"
-)
-
