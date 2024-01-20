@@ -14,16 +14,16 @@ func Lit() {
 	// 文字列
 	fmt.Println("abc")
 
-	// 文字列（改行可能）
+	// 文字列は改行可能
 	fmt.Println(`abc
 	def
 	ghi`)
 
-	// ブール
-	fmt.Println(true)
+	
+	fmt.Println(true) // bool
 
-	// nil（無効な参照先を意味する）
-	fmt.Println(nil)
+	
+	fmt.Println(nil) // nil（無効な参照先を意味する）
 
 }
 /*
@@ -40,14 +40,14 @@ true
 
 // 変数宣言
 func Var() {
-	// 整数型の変数
-	var num1 int = 123
+	
+	var num1 int = 123 // 整数型の変数
 
-	// 右辺で型が決まるなら型名は省略可能
-	var num2 = 456
+	
+	var num2 = 456 // 右辺で型が決まるなら型名は省略可能
 
-	// 省略記法（関数内でのみ利用可能）
-	num3 := 789
+	
+	num3 := 789 // 省略記法（関数内でのみ利用可能）
 
 	fmt.Println(num1)
 	fmt.Println(num2)
