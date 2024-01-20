@@ -13,8 +13,7 @@ func Func1() {
 
 // ①-2
 func Func1_2() {
-	return               // 関数から抜ける
-	fmt.Println("Hello") // 出力されない
+	return // 無を返して関数から抜ける
 }
 
 // ②
@@ -34,7 +33,7 @@ func Func3(txt string, score ...int) {
 
 // ④
 func Func4() string {
-	return "Hello"
+	return "Hello" // return で返して以後出力なし
 }
 
 // ⑤ (複数の戻り値の場合、戻り値をカッコでくくる必要がある)
