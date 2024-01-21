@@ -12,7 +12,7 @@ import (
 
 func arduino_servo() {
 	firmataAdaptor := firmata.NewAdaptor("/dev/ttyACM0") // Arduinoのポートに適切に変更してください
-	pca9685Driver := pca9685.NewDriver(i2c.NewAdafruitAdaptor())
+	pca9685Driver := pca9685.NewDriver(i2c.NewGrovePiAdaptor(firmataAdaptor))
 
 	work := func() {
 		fmt.Println("Starting servo...")
