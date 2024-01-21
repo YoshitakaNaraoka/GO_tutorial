@@ -9,7 +9,7 @@ import (
 	"gobot.io/x/gobot/platforms/firmata"
 )
 
-func ard_servo() {
+func ard_servo2() {
 	firmataAdaptor := firmata.NewAdaptor("/dev/ttyACM0") // Arduinoのポートに適切に変更してください
 	servo := gpio.NewServoDriver(firmataAdaptor, "3")    // "9" はサーボが接続されているピン番号に適宜変更してください
 
