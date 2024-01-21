@@ -17,9 +17,7 @@ func main() {
   work := func() {
     gobot.Every(1*time.Second, func() {
       i := uint8(gobot.Rand(180))
-      fmt.Println("Turning", i)
-      servo.work(i)
-			
+					
     })
   }
 
