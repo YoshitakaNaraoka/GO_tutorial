@@ -5,14 +5,13 @@ import (
 	"time"
 
 	"gobot.io/x/gobot"
-	"gobot.io/x/gobot/drivers/gpio"
 	"gobot.io/x/gobot/platforms/firmata"
-	"パッケージのパス/ard_servo2" // この行を修正する
+	"gobot.io/x/gobot/drivers/gpio"
 )
 
 func main() {
 	firmataAdaptor := firmata.NewAdaptor("/dev/ttyACM0") // Arduinoのポートに適切に変更してください
-	servo := ard_servo2.NewServoDriver(firmataAdaptor, "9") // この行を修正する
+	servo := gpio.NewServoDriver(firmataAdaptor, "9") // この行を修正する
 
 	work := func() {
 		fmt.Println("Starting servo...")
