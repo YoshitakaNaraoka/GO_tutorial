@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	firmataAdaptor := firmata.NewAdaptor("/dev/ttyACM0") // Arduinoのポートに適切に変更してください
+	firmataAdaptor := firmata.NewAdaptor("COM3") // Arduinoのポートに適切に変更してください
 	servo := gpio.NewServoDriver(firmataAdaptor, "9") // この行を修正する
 
 	work := func() {
