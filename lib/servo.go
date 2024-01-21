@@ -18,14 +18,10 @@ func main() {
     gobot.Every(1*time.Second, func() {
       i := uint8(gobot.Rand(180))
       fmt.Println("Turning", i)
-      servo.Move(i)
+      servo.work(i)
+			
     })
   }
 
-  robot := gobot.NewRobot("servoBot",
-    []gobot.Connection{func)
-
-    work,
-  
-  robot.Start()
+  work()
 }
