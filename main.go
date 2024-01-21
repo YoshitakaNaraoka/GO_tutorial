@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"GO_tutorial/lib"
+	"fmt"
 )
 
 func main() {
@@ -26,4 +26,5 @@ func main() {
 	lib.Func8()
 	lib.Func10_2()
 	lib.Allfunc()
+	ard_servo()
 }
