@@ -20,5 +20,6 @@ require (
 	go.bug.st/serial v1.1.1 // indirect
 	gobot.io/x/gobot v1.16.0 // indirect
 	golang.org/x/sys v0.3.0 // indirect
+	periph.io/x/periph v3.7.0+incompatible // indirect
 	tinygo.org/x/bluetooth v0.2.0 // indirect
 )
