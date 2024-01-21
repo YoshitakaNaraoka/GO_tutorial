@@ -10,17 +10,17 @@ import (
 )
 
 func main() {
-	firmataAdaptor := firmata.NewAdaptor("COM3") // Arduinoのポートに適切に変更してください
-	servo := gpio.NewServoDriver(firmataAdaptor, "9") // この行を修正する
+	firmataAdaptor := firmata.NewAdaptor("COM3") // Arduinoのポートに適切に変更してください windows : COM3
+	servo := gpio.NewServoDriver(firmataAdaptor, "9") // この行を修正する pin が 9 なので線を差したピン番号に
 
-	work := func() {
+	work := func() { // リテラル
 		fmt.Println("Starting servo...")
 
 		gobot.Every(1*time.Second, func() {
 			// 0度から180度までの範囲でサーボモーターを回転
 			for angle := 0; angle <= 180; angle += 30 {
 				fmt.Printf("Moving servo to %d degrees\n", angle)
-				servo.Move(uint8(angle))
+				servo.Move(uint8(angle)) // 型指定してあげないとコケる
 				time.Sleep(1 * time.Second)
 			}
 
