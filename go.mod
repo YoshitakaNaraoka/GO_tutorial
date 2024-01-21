@@ -18,7 +18,7 @@ require (
 	github.com/sirupsen/logrus v1.7.0 // indirect
 	github.com/warthog618/gpio v1.0.1 // indirect
 	go.bug.st/serial v1.1.1 // indirect
-	gobot.io/x/gobot v1.16.0 // indirect
+	gobot.io/x/gobot v1.15.0 // indirect
 	golang.org/x/sys v0.3.0 // indirect
 	tinygo.org/x/bluetooth v0.2.0 // indirect
 )
