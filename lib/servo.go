@@ -10,9 +10,9 @@ import (
 )
 
 func main() {
-  gbot := gobot.NewGobot()
+  gobot.NewRobot()
 
-  firmataAdaptor := firmata.NewFirmataAdaptor("firmata", "/dev/tty.usbmodem1411")
+  firmataAdaptor := firmata.NewAdaptor("firmata", "/dev/tty.usbmodem1411")
   servo := gpio.NewServoDriver(firmataAdaptor, "servo", "3")
 
   work := func() {
@@ -29,6 +29,6 @@ func main() {
     work,
   )
 
-  gbot.AddRobot(robot)
-  gbot.Start()
+ 
+  robot.Start()
 }
