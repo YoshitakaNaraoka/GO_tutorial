@@ -12,8 +12,8 @@ import (
 func main() {
   gobot.NewRobot() // NewRobot に変わっていた
 
-  firmataAdaptor := firmata.NewAdaptor("firmata", "/dev/tty.usbmodem1411")
-  servo := firmataAdaptor.ServoConfig("3",0,180)
+  servo := firmata.NewAdaptor("firmata", "/dev/tty.usbmodem1411").ServoConfig("3",0,180)
+   := firmataAdaptor
 
   work := func() {
     gobot.Every(1*time.Second, func() {
@@ -24,9 +24,9 @@ func main() {
   }
 
   robot := gobot.NewRobot("servoBot",
-    []gobot.Connection{firmataAdaptor},
+    []gobot.Connection{servo)
 
     work,
-  )
+  
   robot.Start()
 }
