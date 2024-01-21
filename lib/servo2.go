@@ -5,13 +5,14 @@ import (
 	"time"
 
 	"gobot.io/x/gobot"
+	"gobot.io/x/gobot/drivers/i2c"
+	"gobot.io/x/drivers/pca9685"
 	"gobot.io/x/gobot/platforms/firmata"
-	"gobot.io/x/gobot/drivers/pca9685"
 )
 
 func ard_servo() {
 	firmataAdaptor := firmata.NewAdaptor("/dev/ttyACM0") // Arduinoのポートに適切に変更してください
-	pca9685Driver := pca9685.NewDriver(firmataAdaptor)
+	pca9685Driver := pca9685.NewDriver(i2c.NewAdafruitAdaptor(firmataAdaptor))
 
 	work := func() {
 		fmt.Println("Starting servo...")
