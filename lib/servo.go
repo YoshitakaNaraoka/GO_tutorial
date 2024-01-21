@@ -13,7 +13,7 @@ func main() {
   gobot.NewRobot()
 
   firmataAdaptor := firmata.NewAdaptor("firmata", "/dev/tty.usbmodem1411")
-  servo := gpio.NewServoDriver(firmataAdaptor, "servo", "3")
+  servo := firmataAdaptor.ServoConfig(3,0,180)
 
   work := func() {
     gobot.Every(1*time.Second, func() {
@@ -28,7 +28,5 @@ func main() {
     []gobot.Device{servo},
     work,
   )
-
- 
   robot.Start()
 }
