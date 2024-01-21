@@ -39,3 +39,4 @@ func main() {
 
 	robot.Start()
 }
+// terminal に Ctrl + C で停止
