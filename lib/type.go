@@ -9,7 +9,7 @@ import (
 
 func DataType() {
 
-	i := 123
+	i := 123 // 変数直接代入は := で行われる
 	f := 1.23
 	s := "abc"
 	b := true

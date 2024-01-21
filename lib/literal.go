@@ -5,26 +5,15 @@ import (
 )
 
 func Lit() {
-	
 	fmt.Println(123) // 数字
-
-	
 	fmt.Println(1.23) // 浮動小数点数
-
-	
 	fmt.Println("abc") // 文字列
-
 	// 文字列は改行可能
 	fmt.Println(`abc
 	def
 	ghi`)
-
-	
 	fmt.Println(true) // bool
-
-	
 	fmt.Println(nil) // nil（無効な参照先を意味する）
-
 }
 /*
 出力：
@@ -40,7 +29,6 @@ true
 
 // 変数宣言
 func Var() {
-	
 	var num1 int = 123 // 整数型の変数
 	var num2 = 456 // 右辺で型が決まるなら型名は省略可能
 	num3 := 789 // 省略記法（関数内でのみ利用可能）

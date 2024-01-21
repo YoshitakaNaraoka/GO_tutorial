@@ -25,7 +25,7 @@ func ForSeigyo() {
 		fmt.Println(num)
 	}
 
-	// for文（無限ループ）  全てを省略した場合
+	// for文（全てを省略した場合無限ループ）
 	for {
 		// break, returnを指定しない限り無限ループ
 		break
