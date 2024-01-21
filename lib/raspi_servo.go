@@ -1,3 +1,4 @@
+/*
 package lib
 
 import (
@@ -42,3 +43,4 @@ func raspi_servo() {
 
 	robot.Start()
 }
+**

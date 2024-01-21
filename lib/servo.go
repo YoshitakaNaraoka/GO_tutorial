@@ -1,3 +1,4 @@
+/*
 package lib
 
 import (
@@ -23,3 +24,4 @@ func main() {
 
   work()
 }
+*/
