@@ -12,7 +12,7 @@ import (
 func main() {
 	firmataAdaptor := firmata.NewAdaptor("COM3") // Arduinoのポートに適切に変更してください windows : COM3
 	servo := gpio.NewServoDriver(firmataAdaptor, "9") // この行を修正する pin が 9 なので線を差したピン番号に
-	led := gpio.NewLedDriver(firmataAdaptor, "13")         // LEDのピン番号に適切に変更してください
+	led := gpio.NewLedDriver(firmataAdaptor, "12")         // LEDのピン番号に適切に変更してください
 
 
 	work := func() {
